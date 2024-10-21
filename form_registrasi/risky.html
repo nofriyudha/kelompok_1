@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #3a3a3a;
+            margin: 0;
+        }
+        .container {
+            background-color: #f4a03b;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .container h2 {
+            background-color: #00a2ff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .container label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .container input[type="text"],
+        .container input[type="email"],
+        .container input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #00a2ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .container input[type="submit"]:hover {
+            background-color: #007acc;
+        }
+        .container .gender {
+            margin-top: 10px;
+        }
+        .container .gender input {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter U R First Name">
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter U R Last Name">
+            
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="+91 Enter U R Phone Number">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter U R Email">
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter U R Password">
+            
+            <label for="rePassword">Re Enter Password:</label>
+            <input type="password" id="rePassword" name="rePassword" placeholder="Enter U R Password">
+            
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
